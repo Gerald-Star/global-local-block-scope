@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Scope- Local Scope and Block Scope.</title>
+</head>
+<body>
+
+    <h1>Global Scope- Local Scope and Block Scope</h1> 
+    
+    <div>
+        
+    <h2>Global Scope</h2>
+    <p>The scope of a variable is its visibility; where in the code is the function available? Here is a list of the different scopes a variable can have.
+
+        Global scope: The variable is available throughout the code
+
+        <hr>
+        task is to understand how adding var (and not adding) before a variable name, can change the variable’s scope.
+
+         When you add var before the variable name, its scope is determined by where it is placed. Like so:     
+
+    </p>
+
+
+    <h2>Local Scope</h2>
+
+    <p>Local scope: Available in only a certain area (like only within function)
+
+
+    </p>
+
+
+    <h2>Block Scope</h2>
+    <p>
+        Block scope: Available within an even more certain area (like an if-statement)
+
+    </p>
+
+    <hr>
+    <h3>Example</h3>
+
+    <p>When you add var before the variable name, 
+        its scope is determined by where it is placed. Like so:</p>
+    <br>
+    <p>
+
+        var num1 = 18; // Global scope <br>
+        function fun() { <br>
+        var num2 = 20; // Local (Function) Scope  <br>
+        if (true) { <br>
+        var num3 = 22; // Block Scope (within an if-statement)
+  }
+}
+
+    </p>
+
+    <h3>Variable declared without any var or scope. 
+        It all becomes global scope.
+    </h3>
+
+    <h3>Example</h3>
+
+
+    <p>
+        When you don’t, this is the result:
+
+        num1 = 18; // Global scope <br>
+        function fun( ) { <br>
+        num2 = 20; // Global Scope <br>
+        if (true) { <br>
+        num3 = 22; // Global Scope <br>
+  }
+}
+
+    </p>
+    </div>
+
+<section>
+    <div>
+        <h2>Local Scope and Functions</h2>
+        <p> Variables which are declared within a function, 
+        as well as the function parameters, have local scope.
+         That means they are only visible within that function.
+        </p>
+    </div>
+
+
+</section>
+
+
+<section>
+<br>
+<hr>
+
+<h2>Global vs. Local Scope in same name Functions</h2>
+
+    
+It is possible to have both local and global variables with 
+the same name. When you do this, the local variable takes 
+precedence over the global variable.
+
+In this example:
+<br>
+
+
+The function myFun will return the string Veggies because
+ the local version of the variable is present.
+</section>
+<br>
+<hr>
+
+
+<section>
+
+<p> Understanding Undefined Value returned from a Function.
+A function can include the return statement
+ but it does not have to. In the case that 
+ the function doesn't have a return statement, 
+ when you call it, the function processes 
+ the inner code but the returned value is undefined. </p>
+
+Example
+</section>
+
+
+    <script src="main.js"></script>
+</body>
+</html>

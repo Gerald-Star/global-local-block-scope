@@ -180,4 +180,53 @@ function addFive () {
 addThree(3);
 addFive(5);
 //As you can see, sum is added by 5 with no issues, 
-//but since there is no return statement, there is an undefined output.
+//but since there is no return statement, 
+//there is an undefined output.
+
+
+/* Write a function nextInLine which takes an array 
+(arr) and a number (item) as arguments.
+
+Add the number to the end of the array,  use .push()method
+then remove the first element of the array. .shift()
+
+The nextInLine function should then return the 
+element that was removed.
+
+*/
+
+function nextInLine(arr, item) {
+    arr.push(item);
+    const removed = arr.shift();
+    return  removed; 
+
+    }
+
+
+
+    // If conditional Statement with the boolean value
+    // True or False
+
+    function test (myCondition) {
+        if (myCondition) {
+          return "It was true";
+        }
+        return "It was false";
+      }
+      
+      test(true);
+      test(false);
+
+
+      //EXAMPLE 2
+
+      function testRun (myScore) {
+        if (myScore) {
+            return "I passed the exam true"
+        }
+        return "I failed the exam false"
+      }
+testRun(true);
+testRun(false);
+
+
